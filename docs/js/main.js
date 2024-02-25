@@ -185,22 +185,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(gsap_all__WEBPACK_IMPORTED_MODULE_1__.ScrollTrigger);
+let jump = window.matchMedia("(max-width: 1024px)").matches ? 16 : 120;
 gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to('.lines-direct', {
-  x: () => -(document.querySelector('.lines__items').scrollWidth - window.innerWidth),
+  x: () => -(document.querySelector('.lines__items').scrollWidth - window.innerWidth + jump),
   scrollTrigger: {
+    trigger: '.wrapper',
     start: "top top",
+    end: 'center',
     endTrigger: '.lines',
     scrub: 1
   }
 });
 gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to('.lines-reverse', {
-  x: () => document.querySelector('.lines__items').scrollWidth - window.innerWidth,
+  x: () => document.querySelector('.lines__items').scrollWidth - window.innerWidth + jump,
   scrollTrigger: {
+    trigger: '.wrapper',
     start: "top top",
+    end: 'center',
     endTrigger: '.lines',
     scrub: 1
   }
 });
+
+// window.matchMedia("(max-width: 1024px)").matches ? -16 : -80
 
 /***/ }),
 
