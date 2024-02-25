@@ -1,0 +1,243 @@
+.catalogue-sec {
+  padding-top: 40px;
+
+  @include tablet {
+    padding-top: 32px;
+  }
+
+  @include small-tablet {
+    padding-top: 24px;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
+
+    @include small-tablet {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
+
+    @include small-tablet {
+      margin-bottom: 24px;
+    }
+
+    @include mobile {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__btn {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #39226b;
+
+    @include tablet {
+      font-size: 40px;
+    }
+
+    @include small-tablet {
+      font-size: 36px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  &__btn {
+    width: 213px;
+  }
+
+  &__item {
+    grid-column: 3 span;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+
+    @include small-tablet {
+      height: 400px;
+      grid-column: 1 span;
+      border-radius: 24px;
+    }
+
+    @include mobile {
+      height: 208px;
+      border-radius: 12px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      transition: transform .5s ease-out;
+    }
+
+    @include hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__name {
+    position: absolute;
+    left: 40px;
+    bottom: 56px;
+    margin: 0;
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+
+    @include tablet {
+      font-size: 32px;
+      left: 24px;
+      bottom: 24px;
+    }
+
+    @include small-tablet {
+      font-size: 22px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+      bottom: 12px;
+      left: 12px;
+    }
+  }
+
+  &__big-line {
+    display: grid;
+    grid-template-rows: repeat(2, 400px);
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: unset;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .catalogue-sec__item {
+      &:nth-child(1) {
+        grid-row: 2 span;
+        grid-column: 9 span;
+
+        @include small-tablet {
+          grid-column: 2 span;
+          grid-row: unset;
+          height: 450px;
+        }
+
+        @include mobile {
+          height: 288px;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        grid-column: 3 span;
+        grid-row: 1 span;
+
+        @include small-tablet {
+          grid-column: 1 span;
+          height: 400px;
+        }
+
+        @include mobile {
+          height: 208px;
+        }
+      }
+    }
+
+
+    &--reverse {
+      .catalogue-sec__item {
+        &:nth-child(2) {
+          grid-row: 2 span;
+          grid-column: 9 span;
+
+          @include small-tablet {
+            grid-column: 2 span;
+            order: -1;
+            grid-row: unset;
+          }
+
+          @include mobile {
+            height: 288px;
+          }
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+          grid-row: 1 span;
+          grid-column: 3 span;
+
+          @include small-tablet {
+            grid-column: 1 span;
+            grid-row: unset;
+            height: 400px;
+          }
+
+          @include mobile {
+            height: 208px;
+          }
+        }
+      }
+    }
+  }
+
+  &__line {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 400px;
+    gap: 20px;
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: unset;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      @include small-tablet {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

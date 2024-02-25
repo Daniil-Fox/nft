@@ -1,0 +1,40 @@
+.breadcrumbs {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &>li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 2px;
+          background-color: #7f56d9;
+        }
+      }
+
+      a {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 114%;
+        text-align: center;
+        color: #667085;
+
+        &:not([href]) {
+          color: #39226b;
+        }
+      }
+    }
+  }
+}

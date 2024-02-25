@@ -1,0 +1,64 @@
+.popular {
+  margin-bottom: 100px;
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__slider {
+    padding: 0 calc((100% - var(--container-width)) / 2);
+
+    @include tablet {
+      padding: 0 16px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .swiper-slide {
+      width: auto;
+    }
+
+    @include tablet {
+      display: flex;
+      gap: unset;
+    }
+  }
+
+  &__item {
+    border-radius: 32px;
+    overflow: hidden;
+    height: 470px;
+
+    @include tablet {
+      width: 270px;
+      height: 340px;
+    }
+
+    @include mobile {
+      width: 170px;
+      height: 240px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

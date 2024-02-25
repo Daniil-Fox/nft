@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>NFT</title>
+  <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Ubuntu-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Ubuntu-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/YapariTrial-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/YapariTrial-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="./" class="logo header__logo">
+      <img src="./img/logo.svg" alt="Logo">
+    </a>
+    <nav class="nav header__nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="./" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="./catalogue.html" class="nav__link">Catalogue</a>
+        </li>
+        <li class="nav__item dropdown">
+          <a class="nav__link">
+            Categories
+          </a>
+          <button class="btn-reset dropdown__btn">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <div class="dropdown__list-wrapper">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#image"></use>
+                  </svg>
+                  Art
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#lightning"></use>
+                  </svg>
+                  Music
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#video"></use>
+                  </svg>
+                  Videos
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#box"></use>
+                  </svg>
+                  Domains
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#rocket"></use>
+                  </svg>
+                  Games
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item dropdown">
+          <a class="nav__link">
+            Drops
+          </a>
+          <button class="btn-reset dropdown__btn">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <div class="dropdown__list-wrapper">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#calendar"></use>
+                  </svg>
+                  Calendar
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#scope"></use>
+                  </svg>
+                  Learn more
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="./" class="nav__link">About us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form action="#" class="header__form header-form">
+      <label class="header-form__label">
+        <input type="text">
+        <button class="btn-reset header-form__btn">
+          <img src="./img/search.svg" alt="">
+        </button>
+      </label>
+    </form>
+
+    <div class="header__enter">
+      <a href="#" class="btn-reset header__btn">Sign up</a>
+      <a href="#" class="btn-reset header__btn">Log in</a>
+    </div>
+
+    <div class="header__mobile">
+      <button class="btn-reset">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <button class="btn-reset">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="catalogue-sec">
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul>
+        <li><a href="./">Main</a></li>
+        <li><a>Catalogue</a></li>
+      </ul>
+    </div>
+
+    <div class="catalogue-sec__header">
+      <h2 class="catalogue-sec__title">Catalogue</h2>
+      <button class="catalogue-sec__btn btn-reset btn--stroke btn">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#filter"></use>
+        </svg>
+        Filters</button>
+    </div>
+    <div class="catalogue-sec__big-line">
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/01-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/01.webp">
+          <img src="./img/catalogue/01.jpg" srcset="./img/catalogue/01-2x.jpg" alt="">
+        </picture>
+        <h4 class="catalogue-sec__name">Azuki Art</h4>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/02-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/02.webp">
+          <img src="./img/catalogue/02.jpg" srcset="./img/catalogue/02-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/03-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/03.webp">
+          <img src="./img/catalogue/03.jpg" srcset="./img/catalogue/03-2x.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+    <div class="catalogue-sec__line">
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/04-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/04.webp">
+          <img src="./img/catalogue/04.jpg" srcset="./img/catalogue/04-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/05-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/05.webp">
+          <img src="./img/catalogue/05.jpg" srcset="./img/catalogue/05-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/06-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/06.webp">
+          <img src="./img/catalogue/06.jpg" srcset="./img/catalogue/06-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/07-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/07.webp">
+          <img src="./img/catalogue/07.jpg" srcset="./img/catalogue/07-2x.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+
+    <div class="catalogue-sec__big-line catalogue-sec__big-line--reverse">
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/08-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/08.webp">
+          <img src="./img/catalogue/08.jpg" srcset="./img/catalogue/08-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/09-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/09.webp">
+          <img src="./img/catalogue/09.jpg" srcset="./img/catalogue/09-2x.jpg" alt="">
+        </picture>
+        <h4 class="catalogue-sec__name">Cel Mates</h4>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/10-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/10.webp">
+          <img src="./img/catalogue/10.jpg" srcset="./img/catalogue/10-2x.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+    <div class="catalogue-sec__line">
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/11-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/11.webp">
+          <img src="./img/catalogue/11.jpg" srcset="./img/catalogue/11-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/12-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/12.webp">
+          <img src="./img/catalogue/12.jpg" srcset="./img/catalogue/12-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/13-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/13.webp">
+          <img src="./img/catalogue/13.jpg" srcset="./img/catalogue/13-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/14-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/14.webp">
+          <img src="./img/catalogue/14.jpg" srcset="./img/catalogue/14-2x.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+    <div class="catalogue-sec__line">
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/15-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/15.webp">
+          <img src="./img/catalogue/15.jpg" srcset="./img/catalogue/15-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/16-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/16.webp">
+          <img src="./img/catalogue/16.jpg" srcset="./img/catalogue/16-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/17-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/17.webp">
+          <img src="./img/catalogue/17.jpg" srcset="./img/catalogue/17-2x.jpg" alt="">
+        </picture>
+      </div>
+      <div class="catalogue-sec__item">
+        <picture>
+          <source srcset="./img/catalogue/18-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/catalogue/18.webp">
+          <img src="./img/catalogue/18.jpg" srcset="./img/catalogue/18-2x.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <h2 class="footer__title">Subscribe us</h2>
+    <form action="#" class="footer__form">
+      <label>
+        <input type="text" class="footer__input" placeholder="Your email">
+      </label>
+      <button type="submit" class="btn-reset footer__btn">
+        <svg>
+          <use xlink:href="img/sprite.svg#mail"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "YapariTrial", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Ubuntu", sans-serif;
+  --content-width: 1380px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+
+  --light-color: #fff;
+}

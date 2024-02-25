@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>NFT</title>
+  <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Ubuntu-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Ubuntu-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/YapariTrial-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/YapariTrial-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="./" class="logo header__logo">
+      <img src="./img/logo.svg" alt="Logo">
+    </a>
+    <nav class="nav header__nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="./" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="./catalogue.html" class="nav__link">Catalogue</a>
+        </li>
+        <li class="nav__item dropdown">
+          <a class="nav__link">
+            Categories
+          </a>
+          <button class="btn-reset dropdown__btn">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <div class="dropdown__list-wrapper">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#image"></use>
+                  </svg>
+                  Art
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#lightning"></use>
+                  </svg>
+                  Music
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#video"></use>
+                  </svg>
+                  Videos
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#box"></use>
+                  </svg>
+                  Domains
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#rocket"></use>
+                  </svg>
+                  Games
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item dropdown">
+          <a class="nav__link">
+            Drops
+          </a>
+          <button class="btn-reset dropdown__btn">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <div class="dropdown__list-wrapper">
+            <ul class="dropdown__list list-reset">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#calendar"></use>
+                  </svg>
+                  Calendar
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#scope"></use>
+                  </svg>
+                  Learn more
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="./" class="nav__link">About us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form action="#" class="header__form header-form">
+      <label class="header-form__label">
+        <input type="text">
+        <button class="btn-reset header-form__btn">
+          <img src="./img/search.svg" alt="">
+        </button>
+      </label>
+    </form>
+
+    <div class="header__enter">
+      <a href="#" class="btn-reset header__btn">Sign up</a>
+      <a href="#" class="btn-reset header__btn">Log in</a>
+    </div>
+
+    <div class="header__mobile">
+      <button class="btn-reset">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <button class="btn-reset">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <div class="wrapper">
+        <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <div class="hero__avatars">
+        <div class="hero__img">
+          <img src="./img/avatars/01.png" alt="">
+        </div>
+        <div class="hero__img">
+          <img src="./img/avatars/02.png" alt="">
+        </div>
+        <div class="hero__img">
+          <img src="./img/avatars/03.png" alt="">
+        </div>
+        <div class="hero__img">
+          <img src="./img/avatars/04.png" alt="">
+        </div>
+        <div class="hero__img">
+          <img src="./img/avatars/05.png" alt="">
+        </div>
+        <div class="hero__img">
+          <img src="./img/avatars/06.png" alt="">
+        </div>
+      </div>
+      <h4 class="hero__subtitle">
+        <span>10+</span>
+        NFTs designers
+      </h4>
+      <p class="hero__desc">
+        Discover collect and sell rare NFTs: The world of NFTs offers a unique opportunity for collectors to own
+        one-of-a-kind digital assets that can’t be replicated.
+      </p>
+    </div>
+    <div class="hero__main">
+      <h1 class="hero__title">
+        Discover<br>collect and sell<br>rare NFTs
+      </h1>
+      <a href="./catalogue.html" class="btn-reset btn--purp btn">See new collections</a>
+    </div>
+  </div>
+</section>
+        <section class="lines">
+  <div class="lines__wrapper">
+    <div class="lines__items lines-direct">
+      <div class="lines__item">
+        <picture>
+          <source srcset="./img/lines/01/01-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/lines/01/01.webp">
+          <img src="./img/lines/01/01.png" srcset="./img/lines/01/01-2x.png 2x" alt="">
+        </picture>
+      </div>
+      <div class="lines__item">
+        <picture>
+          <source srcset="./img/lines/01/02-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/lines/01/02.webp">
+          <img src="./img/lines/01/02.png" srcset="./img/lines/01/02-2x.png 2x" alt="">
+        </picture>
+      </div>
+      <div class="lines__item">
+        <picture>
+          <source srcset="./img/lines/01/03-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/lines/01/03.webp">
+          <img src="./img/lines/01/03.png" srcset="./img/lines/01/03-2x.png 2x" alt="">
+        </picture>
+      </div>
+      <div class="lines__item">
+        <picture>
+          <source srcset="./img/lines/01/04-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/lines/01/04.webp">
+          <img src="./img/lines/01/04.png" srcset="./img/lines/01/04-2x.png 2x" alt="">
+        </picture>
+      </div>
+    </div>
+    <div class="lines__items lines-reverse">
+      <div class="lines__item">
+        <picture>
+          <source srcset="./img/lines/02/01-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/lines/02/01.webp">
+          <img src="./img/lines/02/01.png" srcset="./img/lines/02/01-2x.png 2x" alt="">
+        </picture>
+      </div>
+      <div class="lines__item">
+        <picture>
+          <source srcset="./img/lines/02/02-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/lines/02/02.webp">
+          <img src="./img/lines/02/02.png" srcset="./img/lines/02/02-2x.png 2x" alt="">
+        </picture>
+      </div>
+      <div class="lines__item">
+        <picture>
+          <source srcset="./img/lines/02/03-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/lines/02/03.webp">
+          <img src="./img/lines/02/03.png" srcset="./img/lines/02/01-2x.png 2x" alt="">
+        </picture>
+      </div>
+      <div class="lines__item">
+        <picture>
+          <source srcset="./img/lines/02/04-2x.webp" media="(min-width: 1900px)">
+          <source srcset="./img/lines/02/04.webp">
+          <img src="./img/lines/02/04.png" srcset="./img/lines/02/04-2x.png 2x" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+      </div>
+      <section class="popular">
+  <h2 class="visually-hidden">title</h2>
+  <div class="container">
+    <div class="popular__header">
+      <h2 class="title2 popular__title">Popular</h2>
+      <button class="btn-reset btn btn--stroke popular__btn">See other popular arts</button>
+    </div>
+  </div>
+  <div class="popular__slider swiper">
+    <div class="popular__items swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="popular__item">
+          <picture>
+            <source srcset="./img/popular/01-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/popular/01.webp">
+            <img src="./img/popular/01.jpg" srcset="./img/popular/01-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="popular__item">
+          <picture>
+            <source srcset="./img/popular/02-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/popular/02.webp">
+            <img src="./img/popular/02.jpg" srcset="./img/popular/02-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="popular__item">
+          <picture>
+            <source srcset="./img/popular/03-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/popular/03.webp">
+            <img src="./img/popular/03.jpg" srcset="./img/popular/03-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="popular__item">
+          <picture>
+            <source srcset="./img/popular/04-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/popular/04.webp">
+            <img src="./img/popular/04.jpg" srcset="./img/popular/04-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="creators">
+  <div class="container">
+    <div class="creators__header">
+      <h2 class="title2 creators__title">Top creators</h2>
+      <button class="btn btn--stroke creators__btn">See other popular arts</button>
+    </div>
+  </div>
+  <div class="swiper creators__slider">
+    <div class="creators__items swiper-wrapper">
+      <div class="swiper-slide">
+        <article class="creators__item creator">
+          <div class="creator__image">
+            <picture>
+              <source srcset="./img/creators/01-2x.webp" media="(min-width: 1900px)">
+              <source srcset="./img/creators/01.webp">
+              <img src="./img/creators/01.jpg" srcset="./img/creators/01-2x.jpg 2x" alt="">
+            </picture>
+          </div>
+          <div class="creator__info">
+            <h4 class="creator__name">IRM</h4>
+            <p class="creator__desc">
+              NPunk is a limited collection of high quality NFTs…
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide">
+        <article class="creators__item creator">
+          <div class="creator__image">
+            <picture>
+              <source srcset="./img/creators/02-2x.webp" media="(min-width: 1900px)">
+              <source srcset="./img/creators/02.webp">
+              <img src="./img/creators/02.jpg" srcset="./img/creators/02-2x.jpg 2x" alt="">
+            </picture>
+          </div>
+          <div class="creator__info">
+            <h4 class="creator__name">9 lives</h4>
+            <p class="creator__desc">
+              999 Fantasy Cats Living On The Solana Network
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide">
+        <article class="creators__item creator">
+          <div class="creator__image">
+            <picture>
+              <source srcset="./img/creators/03-2x.webp" media="(min-width: 1900px)">
+              <source srcset="./img/creators/03.webp">
+              <img src="./img/creators/03.jpg" srcset="./img/creators/03-2x.jpg 2x" alt="">
+            </picture>
+          </div>
+          <div class="creator__info">
+            <h4 class="creator__name">The First 100</h4>
+            <p class="creator__desc">
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide">
+        <article class="creators__item creator">
+          <div class="creator__image">
+            <picture>
+              <source srcset="./img/creators/04-2x.webp" media="(min-width: 1900px)">
+              <source srcset="./img/creators/04.webp">
+              <img src="./img/creators/04.jpg" srcset="./img/creators/04-2x.jpg 2x" alt="">
+            </picture>
+          </div>
+          <div class="creator__info">
+            <h4 class="creator__name">Cyber Pulses</h4>
+            <p class="creator__desc">
+              Cyber Pulses is a brand dedicated to…
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide">
+        <article class="creators__item creator">
+          <div class="creator__image">
+            <picture>
+              <source srcset="./img/creators/05-2x.webp" media="(min-width: 1900px)">
+              <source srcset="./img/creators/05.webp">
+              <img src="./img/creators/05.jpg" srcset="./img/creators/05-2x.jpg 2x" alt="">
+            </picture>
+          </div>
+          <div class="creator__info">
+            <h4 class="creator__name">DYMZ</h4>
+            <p class="creator__desc">
+              Welcome! I am DYMZ a Colombian/Latin graffiti…
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide">
+        <article class="creators__item creator">
+          <div class="creator__image">
+            <picture>
+              <source srcset="./img/creators/06-2x.webp" media="(min-width: 1900px)">
+              <source srcset="./img/creators/06.webp">
+              <img src="./img/creators/06.jpg" srcset="./img/creators/06-2x.jpg 2x" alt="">
+            </picture>
+          </div>
+          <div class="creator__info">
+            <h4 class="creator__name">eib00n</h4>
+            <p class="creator__desc">
+              I’m a Computer Engineering graduate. I love 3D…
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="collection">
+  <div class="container">
+    <div class="collection__header">
+      <h2 class="title2 collection__title">Collections</h2>
+
+      <div class="collection__buttons">
+        <button class="btn-reset collection__btn active" data-collection-btn="new">New</button>
+        <button class="btn-reset collection__btn" data-collection-btn="trending">Trending</button>
+        <button class="btn-reset collection__btn" data-collection-btn="explore">Explore</button>
+      </div>
+    </div>
+
+    <div class="collection__items active" data-collection-content="new">
+      <div class="collection__item">
+        <div class="collection__new">
+          <img src="./img/new.svg" alt="">
+        </div>
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/01-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/01.webp">
+            <img src="./img/collection/01.jpg" srcset="./img/collection/01-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Azuki Art</h3>
+      </div>
+      <div class="collection__item">
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/02-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/02.webp">
+            <img src="./img/collection/02.jpg" srcset="./img/collection/02-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Cel Mates</h3>
+      </div>
+      <div class="collection__item">
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/03-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/03.webp">
+            <img src="./img/collection/03.jpg" srcset="./img/collection/03-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Persistence of Time</h3>
+      </div>
+    </div>
+    <div class="collection__items" data-collection-content="trending">
+      <div class="collection__item">
+        <div class="collection__new">
+          <img src="./img/new.svg" alt="">
+        </div>
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/01-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/01.webp">
+            <img src="./img/collection/01.jpg" srcset="./img/collection/01-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Azuki Art</h3>
+      </div>
+      <div class="collection__item">
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/02-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/02.webp">
+            <img src="./img/collection/02.jpg" srcset="./img/collection/02-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Cel Mates</h3>
+      </div>
+      <div class="collection__item">
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/03-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/03.webp">
+            <img src="./img/collection/03.jpg" srcset="./img/collection/03-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Persistence of Time</h3>
+      </div>
+    </div>
+    <div class="collection__items" data-collection-content="explore">
+      <div class="collection__item">
+        <div class="collection__new">
+          <img src="./img/new.svg" alt="">
+        </div>
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/01-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/01.webp">
+            <img src="./img/collection/01.jpg" srcset="./img/collection/01-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Azuki Art</h3>
+      </div>
+      <div class="collection__item">
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/02-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/02.webp">
+            <img src="./img/collection/02.jpg" srcset="./img/collection/02-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Cel Mates</h3>
+      </div>
+      <div class="collection__item">
+        <div class="collection__image">
+          <picture>
+            <source srcset="./img/collection/03-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/collection/03.webp">
+            <img src="./img/collection/03.jpg" srcset="./img/collection/03-2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <h3 class="collection__name">Persistence of Time</h3>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="journal">
+  <div class="container">
+    <div class="journal__header">
+      <h2 class="title2 journal__title">Journal</h2>
+      <a href="#" class="btn btn--stroke journal__btn btn-reset">See other articles</a>
+    </div>
+  </div>
+  <div class="journal__slider swiper">
+    <div class="journal__items swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="journal__item">
+          <picture>
+            <source srcset="./img/journal/01-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/journal/01.webp">
+            <img src="./img/journal/01.jpg" srcset="./img/journal/01-2x.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="journal__item">
+          <picture>
+            <source srcset="./img/journal/02-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/journal/02.webp">
+            <img src="./img/journal/02.jpg" srcset="./img/journal/02-2x.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="journal__item">
+          <picture>
+            <source srcset="./img/journal/03-2x.webp" media="(min-width: 1900px)">
+            <source srcset="./img/journal/03.webp">
+            <img src="./img/journal/03.jpg" srcset="./img/journal/03-2x.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <h2 class="footer__title">Subscribe us</h2>
+    <form action="#" class="footer__form">
+      <label>
+        <input type="text" class="footer__input" placeholder="Your email">
+      </label>
+      <button type="submit" class="btn-reset footer__btn">
+        <svg>
+          <use xlink:href="img/sprite.svg#mail"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</footer>
+  </div>
+</body>
+
+</html>

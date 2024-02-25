@@ -1,0 +1,35 @@
+.creators {
+  margin-bottom: 100px;
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__items {}
+
+  &__slider {
+    padding: 0 calc((100% - var(--container-width)) / 2);
+
+    @include tablet {
+      padding: 0 16px;
+    }
+
+    .swiper-slide {
+      box-sizing: border-box;
+      width: auto;
+    }
+  }
+}

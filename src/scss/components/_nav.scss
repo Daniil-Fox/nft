@@ -1,0 +1,20 @@
+.nav {
+  @media (max-width: 1250px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 114%;
+    text-align: center;
+    color: #667085;
+  }
+}

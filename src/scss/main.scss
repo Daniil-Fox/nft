@@ -1,0 +1,20 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+
+@import "./components/header";
+@import "./components/nav";
+@import "./components/header-form";
+@import "./components/dropdown";
+@import "./components/hero";
+@import "./components/lines";
+@import "./components/popular";
+@import "./components/creators";
+@import "./components/creator";
+@import "./components/collection";
+@import "./components/journal";
+@import "./components/footer";
+@import "./components/catalogue-sec";
+@import "./components/breadcrumbs";
